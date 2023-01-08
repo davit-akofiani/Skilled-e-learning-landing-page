@@ -2,8 +2,7 @@
 
 
 .body{
-    padding-left: 16px;
-    padding-right: 16px;
+    
     width: 375px;
     background-color: rgb(223, 223, 238);
     font-family: 'Plus Jakarta Sans';
@@ -14,6 +13,7 @@
     justify-content: space-between;
     margin-top: 16px ;
     margin-bottom: 38px;
+    margin: 0 16px;
 
 }
 .skill {
@@ -32,6 +32,10 @@
     color: white;
     border: none;
 
+}
+/* this is text and image   */
+.text-and-image{
+    margin: 0 16px;
 }
  /* this is head-text   */
  .head-text{
@@ -79,7 +83,7 @@
     border-radius: 10px;
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     padding-top: 24px;
-    margin-bottom: 40px;
+    margin: 0 16px 40px 16px;
 }
 .text2{
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -101,7 +105,12 @@
     background-color: white;
     border-radius: 10px;
     padding: 56px 29px 32px 28px;
-    margin-bottom: 16px;
+    margin-bottom:  16px;
+}
+
+/* section */
+.section-box{
+    margin: 0 16px;
 }
 /* this is all paragraph parametrs */
 .paragraph{
@@ -157,12 +166,13 @@ h4{
 }
 @media screen and (min-width: 375px) {
     .body{
-        width: 100%;
-        padding-left: 39px;
+        width: 768px;
+        
         overflow-x: hidden;
     }
     .header1{
         width: 689px;
+        margin: 0 39px;
         
 
     }
@@ -173,6 +183,7 @@ h4{
     }
     .text-and-image{
         display: flex;
+        margin: 0 39px;
         
         
     }
@@ -191,10 +202,40 @@ h4{
         
     }
     /* all boxes section with tablet */
-    .section-boxes{
-        width: 689px;
+    .section-box{
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 39px;
         
     }
+    
+    .courses{
+        display: inline-block;
+        width: 340px;
+        height: 259px;
+    }
+
+    .animation{
+        display: inline-block;
+    }
+    .designe{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .photography{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .crypto{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .business{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
 }
 @media screen  and (min-width: 768px){
     .body{

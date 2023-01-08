@@ -1,13 +1,14 @@
 /* starting mobile style  */
 
-/* this is header section   */
-body{
+
+.body{
     padding-left: 16px;
     padding-right: 16px;
     width: 375px;
     background-color: rgb(223, 223, 238);
     font-family: 'Plus Jakarta Sans';
 }
+/* this is header section   */
 .header1{
     display: flex;
     justify-content: space-between;
@@ -61,6 +62,14 @@ body{
 /* image section */
 .image{
     width: 327px;
+    height: 301px;
+    
+}
+.image-tablet{
+    display: none;
+}
+.image-desktop{
+    display: none;
 }
 
 /* name of curses */
@@ -145,4 +154,51 @@ h4{
     font-size: 16px;
     line-height: 28px;
     color: white;
+}
+@media screen and (min-width: 375px) {
+    .body{
+        width: 100%;
+        padding-left: 39px;
+        overflow-x: hidden;
+    }
+    .header1{
+        width: 689px;
+        
+
+    }
+    .head-text{
+        width: 398px;
+        
+        
+    }
+    .text-and-image{
+        display: flex;
+        
+        
+    }
+    /* image section */
+    .image{
+        display: none;
+    }
+    .image-tablet{
+        display: inline;
+        width: 640px;
+        height: 640px;
+        margin-top: -95px;
+        margin-left: 12px;
+        
+
+        
+    }
+    /* all boxes section with tablet */
+    .section-boxes{
+        width: 689px;
+        
+    }
+}
+@media screen  and (min-width: 768px){
+    .body{
+      width: 1440px; 
+    }
+    
 }

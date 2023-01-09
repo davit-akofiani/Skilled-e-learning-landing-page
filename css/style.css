@@ -111,6 +111,7 @@
 /* section */
 .section-box{
     margin: 0 16px;
+
 }
 /* this is all paragraph parametrs */
 .paragraph{
@@ -183,20 +184,22 @@ h4{
     }
     .text-and-image{
         display: flex;
+        
         margin: 0 39px;
         
         
     }
+    
     /* image section */
     .image{
         display: none;
     }
     .image-tablet{
-        display: inline;
-        width: 640px;
+        display: inline-block;
+        max-width: 640px;
         height: 640px;
         margin-top: -95px;
-        margin-left: 12px;
+        overflow: hidden;
         
 
         
@@ -204,16 +207,16 @@ h4{
     /* all boxes section with tablet */
     .section-box{
         width: 768px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         margin: 0 39px;
         
     }
-    
     .courses{
         display: inline-block;
         width: 340px;
         height: 259px;
+        padding-top: 163px ;
     }
 
     .animation{
@@ -239,7 +242,13 @@ h4{
 }
 @media screen  and (min-width: 768px){
     .body{
-      width: 1440px; 
+      width: 100%; 
+      overflow-x: hidden;
     }
+    /* heder  */
+    .header1{
+        margin: 0 165px;
+    }
+
     
 }
